@@ -6,17 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sim4</title>
+    <link rel="stylesheet" href="/main.css">
 </head>
 
 <body>
-    hi
+    <div ng-controller="testCtrl">
+        {{test}}
+    </div>
+    <div class="head">
+        <div>Trivia Trends</div>
+        <div>Add Question</div>
+    </div>
+    <div class="nav">
+        <!-- 53D -->
+        <button class="navBox" ui-sref="allQ">All Questions</button>
+        <button class="navBox" ui-sref="easy">Easy</button>
+        <button class="navBox" ui-sref="medium">Medium</button>
+        <button class="navBox" ui-sref="hard">Hard</button>
+        <button class="navBox" ng-model="animal" type="checkbox" ng-click="show = !show">Search by Animal
+        </button>
+    </div>
+    <div class="content">
+        <input type="text" placeholder="Animals to Search by" ng-show="show">
+        <ui-view></ui-view>
+        
+    </div>
 
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js"></script>
+    <!-- 46F -->
+    <!-- 53C -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
 
     <script src="app/app.js"></script>
+    <script src="app/test/testCtrl.js"></script>
+    <script src="app/show/show.js"></script>
 
 
 </body>

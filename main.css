@@ -1,0 +1,32 @@
+body {
+
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #da2d7c;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+}
+.navBox {
+    width: 8%;
+    /* padding: 1%; */
+    margin: 1px;
+    background-color:#02cef1;
+    text-align: center;
+}
+.content {
+    background-color: #ededed;
+    height: 100vh;
+    margin-left: 29.8%;
+    margin-right: 29.8%;
+}
+.content input {
+    width: 95%;
+    display: flex;
+    margin-left: 2.5%;
+}
